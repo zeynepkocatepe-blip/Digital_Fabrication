@@ -1,0 +1,6 @@
+theme = "mana"
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = "Zeynep's DigiFab"
+[params.avatar.home]
+  url = "/astronaut.png"
