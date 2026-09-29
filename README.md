@@ -59,3 +59,5 @@ The rocket has flat fins positioned around its lower section. My feature list in
 Working with separate parts
 The Part Studio shows nine parts. A horizontal boundary is visible near the upper portion of the purple body, and the lower section and nose are visually distinct. Working with multiple parts supports my goal of creating a rocket that can be taken apart and rebuilt.
 However, separate CAD parts still need suitable connections to function as an assembly toy.
+
+
