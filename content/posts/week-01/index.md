@@ -17,3 +17,9 @@ I connected my computer to GitHub and started setting up my Digital Fabrication 
 ## Documentation workflow
 
 I write my weekly documentation in Obsidian and sync the files to GitHub.
+
+## Design photo
+
+## Design photo
+
+![My modular toy rocket](rocket-design.png)
