@@ -338,10 +338,7 @@ The text file and image were sent to GitHub together, and GitHub Actions started
 I now have a Hugo documentation website connected to GitHub Pages and Obsidian. I can write a weekly report in Obsidian, add images inside the weekly folder, synchronize the changes with GitHub, and publish the updated documentation website automatically.
 
 ````
-## Website preview
-
 This is a screenshot of my documentation website after publishing it through GitHub Pages.
-
-![Documentation website homepage](website-homepage.png)
 ````
-![My modular toy rocket](rocket-homepage.png)
+
+![My website](website-homepage.png)
