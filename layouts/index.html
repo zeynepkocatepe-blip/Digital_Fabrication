@@ -1,211 +1,303 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Zeynep's DigiFab</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080e1e;
+      color: #f5f7ff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      height: 75px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+      display: flex;
+      align-items: center;
+    }
+
+    .nav {
+      width: 100%;
+      max-width: 1300px;
+
+      margin: auto;
+      padding: 0 45px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+
+    /* HERO */
+
+    .hero {
+      max-width: 1250px;
+      min-height: 680px;
+
+      margin: auto;
+      padding: 40px 70px;
+
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: clamp(65px, 7vw, 100px);
+      line-height: 0.95;
+
+      letter-spacing: -5px;
+      font-weight: 750;
+    }
+
+    .hero-image {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image::before {
+      content: "";
+
+      position: absolute;
+
+      width: 520px;
+      height: 520px;
+
+      border-radius: 50%;
+
+      background: radial-gradient(
+        circle,
+        rgba(90, 76, 220, 0.16),
+        transparent 68%
+      );
+
+      filter: blur(15px);
+    }
+
+    .hero-image img {
+      position: relative;
+      z-index: 2;
+
+      width: min(560px, 100%);
+
+      filter:
+        drop-shadow(0 0 25px rgba(95, 80, 230, 0.25))
+        drop-shadow(0 0 50px rgba(95, 80, 230, 0.10));
+    }
+
+
+    /* RECENT POSTS */
+
+    .posts {
+      max-width: 1000px;
+
+      margin: auto;
+      padding: 20px 30px 100px;
+    }
+
+    .posts h2 {
+      font-size: 29px;
+      margin-bottom: 30px;
+    }
+
+    .post-card {
+      display: block;
+
+      padding: 24px 28px;
+      margin-bottom: 16px;
+
+      background: #111a2d;
+
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 12px;
+
+      text-decoration: none;
+      color: white;
+
+      transition: 0.2s;
+    }
+
+    .post-card:hover {
+      transform: translateY(-3px);
+      background: #17223a;
+    }
+
+    .post-card h3 {
+      margin-bottom: 7px;
+      font-size: 21px;
+    }
+
+    .post-card p {
+      color: #8f9bb3;
+      font-size: 14px;
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 40px;
+
+      color: #64748b;
+      font-size: 13px;
+    }
+
+
+    @media (max-width: 800px) {
+
+      .nav {
+        padding: 0 25px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        min-height: auto;
+
+        padding: 90px 25px 50px;
+      }
+
+      .hero-text h1 {
+        font-size: 60px;
+        letter-spacing: -3px;
+      }
+
+      .hero-image {
+        margin-top: 50px;
+      }
+
+      .hero-image img {
+        width: 90%;
+      }
+
+      .posts {
+        padding: 60px 25px 90px;
+      }
+    }
+
   </style>
 </head>
+
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Zeynep's DigiFab&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #0f172a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px 10%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: space-between;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logo {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #c4b5fd;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-left: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #c4b5fd;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 70px 20px 50px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>object-fit: contain;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 45px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #cbd5e1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.cards {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1000px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 25px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #1e293b;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.2s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-5px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #c4b5fd;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #cbd5e1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card a {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #a78bfa;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #94a3b8;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="logo"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Zeynep's DigiFab</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "/" | relURL }}"&gt;Home&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "about/" | relURL }}"&gt;About Me&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "posts/" | relURL }}"&gt;Assignments&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "projects/" | relURL }}"&gt;Projects&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="hero"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;img src="{{ "astronaut.png" | relURL }}" alt="Astronaut"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Zeynep's DigiFab&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>Digital Fabrication Documentation</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;section class="cards"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;About Me&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Learn more about me, my interests and my work in Digital Fabrication.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "about/" | relURL }}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Read more →</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Assignments&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>Weekly documentation of my Digital Fabrication course.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "posts/" | relURL }}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>View assignments →</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Projects&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>My designs, fabrication projects and experiments.</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;a href="{{ "projects/" | relURL }}"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>View projects →</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>© 2026 Zeynep's DigiFab</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>
+
+  <div class="nav">
+
+    <a class="logo" href="{{ "/" | relURL }}">
+      Zeynep's DigiFab
+    </a>
+
+    <nav>
+      <a href="{{ "/" | relURL }}">Home</a>
+      <a href="{{ "about/" | relURL }}">About Me</a>
+      <a href="{{ "posts/" | relURL }}">Assignments</a>
+      <a href="{{ "projects/" | relURL }}">Projects</a>
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <h1>
+        Zeynep's<br>
+        DigiFab
+      </h1>
+
+    </div>
+
+
+    <div class="hero-image">
+
+      <img
+        src="{{ "astronaut.png" | relURL }}"
+        alt="Astronaut working on a laptop"
+      >
+
+    </div>
+
+  </section>
+
+
+  <section class="posts">
+
+    <h2>Recent Posts</h2>
+
+
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+
+    <a class="post-card" href="{{ .RelPermalink }}">
+
+      <h3>{{ .Title }}</h3>
+
+      <p>
+        {{ .Date.Format "January 2, 2006" }}
+      </p>
+
+    </a>
+
+    {{ end }}
+
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 Zeynep's DigiFab
+</footer>
+
+
 </body>
 </html>
