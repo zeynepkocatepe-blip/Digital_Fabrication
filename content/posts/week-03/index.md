@@ -215,6 +215,77 @@ In Obsidian, I changed the file and link settings:
 
 ## 14. Installing the Obsidian Git plugin
 
+I turned off Restricted Mode in Obsidian and installed the community plugin:
+
+````
+Git by Vinzent
+````
+
+I enabled the plugin after installing it.
+
+## 15. Configuring automatic Git synchronization
+
+In the Obsidian Git settings, I opened the `Automatic` section.
+I set:
+
+````
+Auto commit-and-sync interval: 5 minutes
+````
+
+I also enabled:
+
+````
+Push on commit-and-sync
+Pull on commit-and-sync
+Pull on startup
+````
+
+This means that Obsidian can automatically commit changes, pull updates from GitHub, and push new changes to GitHub.
+
+## 16. Creating the first documentation post
+
+I created the following folders:
+
+````
+content/posts/week-01/
+````
+
+Inside the folder, I created:
+
+````
+index.md
+````
+
+The full path was:
+
+````
+content/posts/week-01/index.md
+````
+
+I added the title, date, and documentation text to the file using Hugo front matter.
+
+## 17. Synchronizing Obsidian with GitHub
+
+I opened the Obsidian command palette:
+
+````
+⌘ + P
+````
+
+I ran:
+
+````
+Git: Commit-and-sync
+````
+
+Obsidian showed:
+
+````
+Pull: Everything is up-to-date
+Pushed 1 file to remote
+````
+
+This confirmed that the file had been successfully uploaded to GitHub.
 
 
 
