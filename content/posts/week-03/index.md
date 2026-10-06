@@ -133,6 +133,88 @@ The `.obsidian` folder was excluded because it contains local Obsidian setting
 
 ## 9. Saving the project to GitHub
 
+I added the website files to Git:
+
+````
+git add .
+````
+
+I created the first commit:
+
+
+````
+git commit -m "Add Hugo site with Mana theme"
+````
+
+I connected the local `main` branch to GitHub and uploaded the project:
+
+````
+git push -u origin main
+````
+
+## 10. Setting up GitHub Pages
+
+In the GitHub repository, I opened:
+
+````
+Settings > Pages
+````
+
+I selected GitHub Actions as the source for the website.
+
+The website would be published at:
+
+````
+[```bash](https://zeynepkocatepe-blip.github.io/Digital_Fabrication/)
+````
+
+## 11. Creating the GitHub Actions workflow
+
+I created a folder for the workflow:
+
+````
+mkdir -p .github/workflows
+````
+
+I created the workflow file:
+
+````
+touch .github/workflows/hugo.yaml
+open -e .github/workflows/hugo.yaml
+````
+
+The workflow automatically builds the Hugo website whenever I push a change to the `main` branch.
+
+After saving the workflow, I uploaded it to GitHub:
+
+````
+git add .github/workflows/hugo.yaml
+git commit -m "Set up automatic website publishing"
+git push
+````
+
+GitHub Actions then built and deployed the website automatically.
+
+## 12. Opening the project in Obsidian
+
+I opened the project folder as an Obsidian vault:
+
+````
+~/FabAcademy/mywebsite
+````
+cmd+shft+G
+
+This allowed me to edit the same files that were stored in the GitHub repository.
+
+## 13. Configuring Obsidian links
+
+In Obsidian, I changed the file and link settings:
+- I disabled `Use [[Wikilinks]]`.
+- I selected `Path from current file` for new links.
+- I set attachments to be saved in the same folder as the current file.
+
+## 14. Installing the Obsidian Git plugin
+
 
 
 
