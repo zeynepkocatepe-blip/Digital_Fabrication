@@ -10,12 +10,9 @@ This week, I created my own documentation website for my Digital Fabrication wor
 
 ## 1. Installing Hugo
 
-````
 I first installed Hugo on my computer using Homebrew:
 
 ```bash
 brew install hugo
-````
-
-
+```
 
