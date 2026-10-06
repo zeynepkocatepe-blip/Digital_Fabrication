@@ -287,11 +287,55 @@ Pushed 1 file to remote
 
 This confirmed that the file had been successfully uploaded to GitHub.
 
+## 18. Checking GitHub Actions
 
+I opened the `Actions` tab in the GitHub repository.
 
+The workflow completed with a green check mark. This meant that GitHub successfully built and published the updated Hugo website.
 
+## 19. Creating a weekly documentation structure
 
+For future weeks, I will create a new folder for each documentation:
 
+````
+content/posts/week-02/
+content/posts/week-03/
+content/posts/week-04/
+````
+
+Each folder will contain its own:
+
+````
+index.md
+````
+
+This keeps every weekly documentation separate.
+
+## 20. Testing image uploads
+
+I created a test image inside the weekly post folder:
+
+````
+content/posts/week-01/rocket-design.jpg
+````
+
+I added the image to the Markdown file:
+
+````
+![My modular toy rocket](rocket-design.jpg)
+````
+
+I then ran the following command in Obsidian:
+
+````
+⌘ + P → Git: Commit-and-sync
+````
+
+The text file and image were sent to GitHub together, and GitHub Actions started building the website again.
+
+## Result
+
+I now have a Hugo documentation website connected to GitHub Pages and Obsidian. I can write a weekly report in Obsidian, add images inside the weekly folder, synchronize the changes with GitHub, and publish the updated documentation website automatically.
 
 ````
 ```bash
