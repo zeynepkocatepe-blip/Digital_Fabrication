@@ -5,13 +5,13 @@ draft: false
 assignment: 2
 ---
 
-For this assignment, I recreated a modular toy rocket in Onshape and produced it using a 3D printer. The rocket was designed as a press-fit construction kit, so its parts could be connected, removed, and rearranged.
+For this assignment, I recreated a modular toy rocket in Onshape and produced it using a 3D printer. The rocket was designed as a press fit construction kit, so its parts could be connected, removed, and rearranged.
 
 ## 1. Examining the Original Rocket
 
-At the beginning of the project, we were given a previously printed version of the modular rocket.
+At the beginning of the project, we were given a previously printed version of the rocket.
 
-I examined its different components and measured the dimensions of the printed parts. I used these measurements as references while creating my own version in Onshape.
+I measured the dimensions of the printed parts. I used these measurements as references while creating my own version in Onshape.
 
 ## 2. Creating the Initial Sketches
 
@@ -37,7 +37,7 @@ I then used Linear Pattern to create four fin pieces in total. I did not use a p
 
 After completing the 2D sketches, I used the Extrude tool to turn them into three-dimensional parts.
 
-I entered the required dimensions separately for the connector cylinders, 12-sided body sections, fins, and other rocket components.
+I entered the required dimensions separately for the connector cylinders using "dimension" tool, 12-sided body sections, fins, and other rocket components.
 
 This created the basic solid parts of the modular rocket.
 
@@ -78,11 +78,9 @@ The design included:
 
 ## 8. Preparing the First 3D Print
 
-I exported the parts from Onshape and opened them in the slicing software used with the 3D printer.
+I exported the parts from Onshape and opened them in the xTool Studio (not sure of the name) app used with the 3D printer.
 
 I arranged the components on the print bed and prepared them for printing.
-
-At this stage, I used a clearance of 0.15 mm between the connectors and their holes.
 
 ## 9. Problems With the First Print
 
@@ -91,8 +89,6 @@ The first print was not completely successful.
 Many of the small cylindrical connector pieces did not print correctly. Some of the other components were also incomplete and only printed partially.
 
 The connector pieces that printed successfully fitted too tightly inside the holes. They were difficult to insert and remove.
-
-![Problems with the first 3D print](first-print-failed.jpg)
 
 This showed that the original 0.15 mm clearance was not sufficient for the printer and material that I used.
 

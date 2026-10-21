@@ -2,7 +2,7 @@
 title: "Assignment 1: Documentation and GitHub Pages Setup"
 date: 2026-09-29
 draft: false
-assignment: "1"
+assignment: 1
 ---
 
 This week, I created a documentation website for my Digital Fabrication course. I used GitHub to store my files, Hugo to generate the website, the Mana theme for its design, and Obsidian to write my weekly documentation.
