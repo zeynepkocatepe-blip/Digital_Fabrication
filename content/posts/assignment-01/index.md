@@ -1,7 +1,7 @@
 ---
-title: "Week 01: Documentation and GitHub Pages Setup"
+title: "Assignment 1: Documentation and GitHub Pages Setup"
 date: 2026-09-29
-draft: true
+draft: false
 assignment: "1"
 ---
 
