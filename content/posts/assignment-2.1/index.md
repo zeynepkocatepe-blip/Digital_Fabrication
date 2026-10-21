@@ -39,9 +39,11 @@ This sketch contained only the lines where the cardboard needed to bend. These l
 
 Keeping the cut and score lines in separate sketches made it possible to give them different settings in the laser-cutting software.
 
+I used "dimension" tool in both sketches to makes sure the measurements were exactly accurate with what I wanted.
+
 ## 5. Sending the Files
 
-I exported the two sketches as separate files and sent them to the school's fabrication email.
+I exported the two sketches as separate files and sent them to the school's 3dprint email.
 
 One file contained the outer cutting lines, while the other contained the folding lines.
 
@@ -49,7 +51,24 @@ One file contained the outer cutting lines, while the other contained the foldin
 
 I opened the files in xTool Creative Space.
 
-For the material, I selected:
+For the material, I selected **Corrugated Cardboard**.
 
-```text
-Corrugated Cardboard
+I assigned the operations as follows:
+
+- The first sketch containing the outside edges was set to **Cut**.
+- The second sketch containing the folding lines was set to **Score**.
+
+## 7. Laser Settings
+
+After researching suitable settings, I used:
+
+| Operation | Power | Speed |
+|---|---:|---:|
+| Cut | 40% | 90 mm/s |
+| Score | 15% | 120 mm/s |
+
+The Cut setting was used to separate the box from the cardboard sheet. The Score setting marked the folding lines without cutting completely through the cardboard.
+
+## Result
+
+I prepared a custom-sized cardboard box template for my modular rocket. By separating the cutting and scoring lines, the box could be cut and folded correctly using the laser cutter.
