@@ -72,3 +72,5 @@ The Cut setting was used to separate the box from the cardboard sheet. The Score
 ## Result
 
 I prepared a custom-sized cardboard box template for my modular rocket. By separating the cutting and scoring lines, the box could be cut and folded correctly using the laser cutter.
+
+![Final laser-cut cardboard box](final-cardboard-box.jpg)
