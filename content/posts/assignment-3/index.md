@@ -1,6 +1,6 @@
 ---
 title: "Assignment 3: Wireless LED Control with micro:bit"
-date: 2026-10-22
+date: 2026-10-21
 draft: false
 assignment: 3
 ---
