@@ -1,6 +1,6 @@
 ---
 title: "Assignment 2: Designing and 3D Printing a Modular Rocket"
-date: 2026-10-12
+date: 2026-10-06
 draft: false
 assignment: 2
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Assignment 2.1: Designing a Laser-Cut Rocket Box"
-date: 2026-10-22
+date: 2026-10-13
 draft: false
 assignment: 2.1
 ---
