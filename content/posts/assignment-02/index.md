@@ -124,7 +124,12 @@ The revised 0.20 mm clearance also worked correctly. The connector pieces could 
 
 The individual 3D-printable files are available below:
 
-[Download my 3D rocket files](assignment-02-rocket-files.zip)
+#### Downloadable 3D Files
+
+The original rocket model and the revised parts for the second print are available below:
+
+- [Download the original rocket files](assignment-02-rocket-files.zip)
+- [Download the revised parts](assignment-02-revised-parts.zip)
 
 ## Result
 
