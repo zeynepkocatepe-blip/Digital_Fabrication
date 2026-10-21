@@ -118,8 +118,6 @@ The second print was successful. The previously missing components printed compl
 
 The revised 0.20 mm clearance also worked correctly. The connector pieces could be inserted and removed without excessive force, while still holding the rocket parts together securely.
 
-I assembled the printed components to create the final modular rocket.
-
 ![Final assembled modular rocket](assembled-rocket.jpg)
 
 ## 13. Downloadable 3D Files
