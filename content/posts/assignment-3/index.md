@@ -55,6 +55,8 @@ I connected the multimeter probes to the output cables:
 
 I checked the voltage displayed on the multimeter and slowly turned the small adjustment screw on the voltage converter. I continued adjusting it until the multimeter displayed an output voltage of approximately **5 V**.
 
+I didn't connect the LED until I was done with this process to make sure it didn't get damaged.
+
 After setting the correct voltage, I connected the voltage converter output to the LED:
 
 - A red cable was connected from **OUT+** to the LED's positive voltage input.
