@@ -1,5 +1,5 @@
 theme = "mana"
-baseURL = 'https://example.org/'
+baseURL = 'https://zeynepkocatepe-blip.github.io/Digital_Fabrication/'
 locale = 'en-us'
 title = "Zeynep's DigiFab"
 [params.avatar.home]
