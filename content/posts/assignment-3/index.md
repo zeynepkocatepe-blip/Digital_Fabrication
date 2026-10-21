@@ -80,6 +80,10 @@ Source: [micro:bit WebUSB troubleshooting](https://support.microbit.org/support/
 
 The first micro:bit was programmed as the radio receiver and LED controller.
 
+Multiple students were working with micro:bits in the same classroom. To prevent the devices from receiving signals from other students' projects, each student was assigned a different radio group number.
+
+My assigned radio group was `9`. I used group `9` in both the receiver and remote programs so that the two micro:bits could communicate with each other without interfering with the other projects in the classroom.
+
 When the program started, it:
 
 - Displayed the letter Z on the built-in LED matrix to confirm that the program had been transferred
