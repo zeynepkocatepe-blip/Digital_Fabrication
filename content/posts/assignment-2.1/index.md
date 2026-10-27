@@ -3,6 +3,7 @@ title: "Assignment 2.1: Designing a Laser-Cut Rocket Box"
 date: 2026-10-13
 draft: false
 assignment: 2.1
+aliases:
 ---
 
 For this assignment, I designed a cardboard box for storing my rocket. I created the box template in Onshape and prepared it for laser cutting using xTool Creative Space.
