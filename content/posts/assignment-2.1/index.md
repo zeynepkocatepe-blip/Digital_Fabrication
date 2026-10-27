@@ -69,6 +69,13 @@ After researching suitable settings, I used:
 
 The Cut setting was used to separate the box from the cardboard sheet. The Score setting marked the folding lines without cutting completely through the cardboard.
 
+## 8. Downloadable Design Files
+
+The DXF files used for laser cutting are available below:
+
+- [Download the cut file](box-cut.dxf)
+- [Download the score file](box-score.dxf)
+
 ## Result
 
 I prepared a custom-sized cardboard box template for my modular rocket. By separating the cutting and scoring lines, the box could be cut and folded correctly using the laser cutter.
